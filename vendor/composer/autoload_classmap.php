@@ -6,9 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'App\\Models\\Mahasiswa' => $baseDir . '/app/Models/mahasiswa.php',
+    'App\\Models\\Mahamodel' => $baseDir . '/app/Models/Mahamodel.php',
     'App\\Models\\Sample' => $baseDir . '/app/Models/Sample.php',
-    'Stringable' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
-    'UnhandledMatchError' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/UnhandledMatchError.php',
-    'ValueError' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
 );
