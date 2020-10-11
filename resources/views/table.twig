@@ -14,6 +14,15 @@
   </thead>
   <tbody id="rowmaha">
 
+{% for key,item in tr %}
+
+    <tr>
+      <td>{{ key+1 }}</td>
+      <td>{{ item.user_nama }}</td>
+    </tr>
+{% endfor %}
+
+
   </tbody>
 </table>
 
