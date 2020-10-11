@@ -37,12 +37,14 @@
 
 $( ".btnAdd" ).click(function() {
    var $form = $("#formMaha");
-    var data = getFormData($form);
+    var dataPost = getFormData($form);
     
-$.post( "/addMahasiswa",data, function( data ) {
+    $.post( "/addMahasiswa",dataPost, function( data ) {
 
-        
-    });
+        window.location = data.redirect;
+
+    }, "json");
+
 });
 
 
